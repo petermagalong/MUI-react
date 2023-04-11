@@ -4,7 +4,7 @@ import Post from './Post'
 
 const Feed = () => {
   return (
-    <Box flex={4} p={2} gap='10px'>
+    <Box flex={4} p={5} gap='10px'>
         <Post />
         <Post />
     </Box>

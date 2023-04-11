@@ -2,13 +2,12 @@ import { AccountBox, Article, Group, Inbox, ModeNight, Person, Settings, Storefr
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = ({setMode,mode}) => {
   return (
-    <Box flex={1} 
-    p={2} sx={{ display:{xs:"none",sm:"block" }}}>Sidebar
-    <Box position="fixed">
-
-     <List >
+    <Box flex={1.5} 
+    p={2} sx={{ display:{xs:"none",sm:"none" }}}>
+    <Box position="sticky" top={80} >
+      <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
@@ -70,7 +69,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch/>
+              <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
     </List>
