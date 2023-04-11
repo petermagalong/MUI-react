@@ -5,7 +5,7 @@ import React from 'react'
 const Sidebar = ({setMode,mode}) => {
   return (
     <Box flex={1.5} 
-    p={2} sx={{ display:{xs:"none",sm:"none" }}}>
+    p={2} sx={{ display:{xs:"none",sm:"block" }}}>
     <Box position="sticky" top={80} >
       <List>
           <ListItem disablePadding>

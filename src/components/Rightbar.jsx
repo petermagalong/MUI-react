@@ -4,7 +4,7 @@ import React from 'react'
 const Rightbar = () => {
   return (
     <Box flex={2} sx={{ display:{xs:"none",sm:"block" }}}>
-        <Box bgcolor="pink" position="fixed" width={300}>
+        <Box position="fixed" width={300}>
             <Typography variant='h6' fontWeight={100}> Online Friends </Typography> 
             <AvatarGroup max={7}>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
